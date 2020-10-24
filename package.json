@@ -5,8 +5,11 @@
     "world-indices-monitor-backend": "bin/world-indices-monitor-backend.js"
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
+    "tsc": "node_modules/.bin/tsc",
+    "build": "npm run tsc",
+    "clearBuildCache": "rm -rf ./build && rm -rf ./bundles",
+    "eslint": "node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx src/",
+    "watch": "npm run tsc -- -watch --noemit",
     "test": "jest",
     "cdk": "cdk"
   },
@@ -17,7 +20,11 @@
     "@types/lodash": "^4.14.162",
     "@types/node": "10.17.27",
     "@types/puppeteer": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
     "aws-cdk": "1.70.0",
+    "eslint": "^7.12.0",
+    "eslint-plugin-import": "^2.22.1",
     "file-loader": "^6.1.1",
     "jest": "^26.0.4",
     "puppeteer": "^5.3.1",
