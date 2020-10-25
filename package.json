@@ -5,13 +5,11 @@
     "world-indices-monitor-backend": "bin/world-indices-monitor-backend.js"
   },
   "scripts": {
-    "tsc": "node_modules/.bin/tsc",
-    "build": "npm run tsc",
-    "clearBuildCache": "rm -rf ./build && rm -rf ./bundles",
-    "eslint": "node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx",
-    "eslintTest": "npm run eslint src/",
-    "eslintFix": "npm run eslint src/ -- --fix",
-    "watch": "npm run tsc -- -watch --noemit",
+    "build": "tsc",
+    "clearbuildcache": "rm -rf ./build && rm -rf ./bundles",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx src/",
+    "eslint:fix": "npm run eslint src/ -- --fix",
+    "watch": "tsc --watch --noemit",
     "test": "jest",
     "cdk": "cdk"
   },
