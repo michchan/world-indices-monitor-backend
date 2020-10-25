@@ -10,6 +10,7 @@
     "clearBuildCache": "rm -rf ./build && rm -rf ./bundles",
     "eslint": "node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx",
     "eslintTest": "npm run eslint src/",
+    "eslintFix": "npm run eslint src/ scripts/ -- --fix",
     "watch": "npm run tsc -- -watch --noemit",
     "test": "jest",
     "cdk": "cdk"
