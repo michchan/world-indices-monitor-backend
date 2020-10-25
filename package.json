@@ -8,7 +8,7 @@
     "build": "tsc",
     "clearbuildcache": "rm -rf ./build && rm -rf ./bundles",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx src/",
-    "eslint:fix": "npm run eslint src/ -- --fix",
+    "eslint:fix": "npm run eslint -- --fix",
     "watch": "tsc --watch --noemit",
     "test": "jest",
     "cdk": "cdk"
