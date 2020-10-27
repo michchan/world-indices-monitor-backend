@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "clearbuildcache": "rm -rf ./build && rm -rf ./bundles",
-    "eslint": "eslint --ext .js,.jsx,.ts,.tsx src/",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "eslint:fix": "npm run eslint -- --fix",
     "watch": "tsc --watch --noemit",
     "test": "jest",
