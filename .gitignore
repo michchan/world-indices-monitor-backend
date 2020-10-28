@@ -9,8 +9,12 @@ node_modules
 .cdk.staging
 cdk.out
 
+
 # Parcel default cache directory
 .parcel-cache
+
+# Ignore template.yaml
+template.yaml
 
 # Ignore DotEnv
 *.env
