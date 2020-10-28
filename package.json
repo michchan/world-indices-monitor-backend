@@ -2,7 +2,7 @@
   "name": "world-indices-monitor-backend",
   "version": "0.1.0",
   "bin": {
-    "world-indices-monitor-backend": "bin/world-indices-monitor-backend.js"
+    "world-indices-monitor-backend": "bin/world-indices-monitor-backend.ts"
   },
   "scripts": {
     "build": "tsc && webpack",
