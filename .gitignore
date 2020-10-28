@@ -10,3 +10,10 @@ cdk.out
 
 # Parcel default cache directory
 .parcel-cache
+
+# Ignore DotEnv
+*.env
+
+# Ignore build and bundles
+build
+bundles
