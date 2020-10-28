@@ -27,7 +27,10 @@
     "strictPropertyInitialization": false,
     "skipLibCheck": true,
     "typeRoots": ["./node_modules/@types"],
+    "rootDir": "src",
+    "outDir": "build",
     "baseUrl": "./"
   },
-  "exclude": ["cdk.out"]
+  "exclude": ["node_modules", "cdk.out"],
+  "include": ["src"]
 }
