@@ -6,12 +6,14 @@
   },
   "scripts": {
     "build": "tsc && webpack",
+    "cdk": "cdk",
     "clearbuildcache": "rm -rf ./build && rm -rf ./bundles",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "eslint:fix": "npm run eslint -- --fix",
-    "watch": "tsc --watch --noemit",
+    "invoke": "npm run template && sam local invoke",
+    "template": "npm run build && npm run cdk synth --no-staging > template.yaml",
     "test": "jest",
-    "cdk": "cdk"
+    "watch": "tsc --watch --noemit"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.70.0",
