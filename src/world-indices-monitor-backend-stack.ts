@@ -1,7 +1,7 @@
 import * as cdk from '@aws-cdk/core'
 
-import api from 'src/services/api'
-import cron from 'src/services/cron'
+import api from './services/api'
+import cron from './services/cron'
 
 export class WorldIndicesMonitorBackendStack extends cdk.Stack {
   constructor (scope: cdk.Construct, id: string, props?: cdk.StackProps) {
