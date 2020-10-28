@@ -1,6 +1,6 @@
 import { ScheduledHandler } from 'aws-lambda'
 
-export const handler: ScheduledHandler = async (event, context, callback) => {
+export const handler: ScheduledHandler = (event, context, callback) => {
   try {
     console.log('I am running!')
   } catch (error) {
