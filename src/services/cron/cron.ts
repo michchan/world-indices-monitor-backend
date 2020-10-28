@@ -15,7 +15,7 @@ const constructIamRole = (scope: cdk.Construct): iam.Role => {
 }
 
 const constructLambdas = (scope: cdk.Construct, role: iam.Role) => {
-  new lambda.Function(scope, 'scrape', {
+  new lambda.Function(scope, 'Scrape', {
     code: lambda.Code
       .fromAsset(`bundles/${SERVICE_PATHNAME}/handlers`),
     handler: 'scrape.handler',
