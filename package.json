@@ -4,17 +4,22 @@
   "bin": {
     "world-indices-monitor-backend": "bin/world-indices-monitor-backend.ts"
   },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.0"
+  },
   "scripts": {
     "build": "tsc && webpack",
     "cdk": "cdk",
     "clearbuildcache": "rm -rf ./build && rm -rf ./bundles",
     "deploy": "cdk deploy WorldIndicesMonitorBackendStack --require-approval never",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "eslint:fix": "npm run eslint -- --fix",
-    "invoke": "npm run template && sam local invoke",
-    "template": "npm run build && cdk synth --no-staging > template.yaml",
+    "eslint:fix": "yarn run eslint -- --fix",
+    "invoke": "yarn run template && sam local invoke",
+    "template": "yarn run build && cdk synth --no-staging > template.yaml",
     "test": "jest",
-    "watch": "tsc --watch --noemit"
+    "tsc-watch": "tsc --watch --noemit"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.70.0",
